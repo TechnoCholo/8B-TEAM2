@@ -3,79 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Básica con Barra de Navegación</title>
+    <title>Projecto de Technology</title>
     <style>
+        /* Estilos globales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Times, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        header {
-            background-color: #333;
-            color: white;
+        header, footer {
+            background-color: #358;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 1em 0;
         }
         nav {
-            background-color: #333;
-            text-align: center;
-        }
-        nav a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #111;
-        }
-         footer {
-            background-color: #333;
+            background-color: #356;
             color: #fff;
             text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Contenedor para la barra lateral y contenido principal */
+        .container {
+            display: flex;
+        }
+
+        /* Estilos de la barra lateral */
+        aside {
+            flex: 0 0 300px;
+            background-color: #f4f4f4;
             padding: 20px;
-            margin-top: 20px;
+        }
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        aside p {
+            color: #555;
+        }
+
+        /* Contenedor principal */
+        .main-content {
+            flex: 1;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Technology Project</h1>
+        <h6>Team 4</h6>
     </header>
+
     <nav>
-        <a href="#nowhere">Team Member 1</a>
-        <a href="#services">Team Member 2</a>
-        <a href="#about">Team Member 3 </a>
-        <a href="#contact">Team Member 4</a>
-        <a href="#faq">Team Member 5</a>
+        <a href="">Back</a>
     </nav>
 
-    <main>
-        <section id="home">
-            <h2>Bienvenido a Mi Página Web</h2>
-            <p>Esta es la sección de inicio.</p>
-        </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <p>Información sobre nuestros servicios.</p>
-        </section>
-        <section id="about">
-            <h2>Acerca de</h2>
-            <p>Información sobre nosotros.</p>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Cómo ponerse en contacto con nosotros.</p>
-        </section>
-        <section id="faq">
-            <h2>FAQ</h2>
-            <p>Preguntas frecuentes.</p>
-        </section>
-    </main>
-
+    <div class="container">
+        <aside>
+            <h2>Team members</h2>
+            <p> For the project of techonology, we make a web page in which each one of us .</p>
+            <ul>
+                <li>this is an element of a List</li>
+                <li>this is another Element of the List</li>
+            </ul>
+        </aside>
+   
+        <div class="main-content">
+            <h2>Contenido Principal</h2>
+            <p>La Idea es que aqui pongan la informacion del Equipo y que con la barra de Navegacion sean paginas de los miembros del equipo</p>
+            <p>Me van a dar 1 entregable por equipo y ademas 1 individual Yo me encargo de ponerlo Online para que lo puedan explicar la idea es que la pagina web si sea accesible en la WORLD WIDE WEB</p>
+            <p>Hay 2 calificaciones para el proyecto 1 individula y la otra en equipo, si algun miembro no entrega la individual TODO el quipo pierde Puntos en la parte de EQUIPO asi que se pueden ayudar para entregar las paginas</p>
+            <h2>Otro Título</h2>
+            <p>SKIBIDI DOP DOP YES YES SKIBIDI W DIP DIP</p>
+            <p>Bienvenidos Developers Frontend Juniors</p>
+        </div>
+    </div>
 
     <footer>
+        <p>&copy; 2024 Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
+
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
 </body>
