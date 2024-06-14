@@ -1,129 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuración básica de la página -->
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para un diseño responsivo -->
-    <title>Página Básica con Barra de Navegación</title> <!-- Título de la página -->
-
-    <!-- Estilos CSS internos para la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project of Technology</title>
     <style>
-        /* Estilo para el cuerpo de la página */
+        /* Estilos globales */
         body {
-            font-family: Arial, sans-serif; /* Fuente principal */
-            margin: 0; /* Sin margen alrededor del cuerpo */
-            padding: 0; /* Sin relleno alrededor del cuerpo */
+            font-family: Times, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        /* Estilo para el encabezado */
-        header {
-            background-color: #333; /* Fondo color gris oscuro */
-            color: white; /* Texto en color blanco */
-            text-align: center; /* Texto centrado */
-            padding: 1em 0; /* Relleno arriba y abajo de 1em */
+        header, footer {
+            background-color: #358;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
-        /* Estilo para la barra de navegación */
         nav {
-            background-color: #333; /* Fondo color gris oscuro */
-            text-align: center; /* Enlaces centrados */
+            background-color: #356;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
         }
-        /* Estilo para los enlaces de navegación */
         nav a {
-            display: inline-block; /* Mostrar los enlaces en línea */
-            color: white; /* Color del texto en blanco */
-            text-align: center; /* Texto centrado */
-            padding: 14px 20px; /* Relleno alrededor de los enlaces */
-            text-decoration: none; /* Sin subrayado en los enlaces */
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
         }
-        /* Efecto de hover para los enlaces de navegación */
         nav a:hover {
-            background-color: #111; /* Fondo color negro cuando se pasa el ratón por encima */
+            background-color: #555;
         }
-        /* Estilo para el pie de página */
-        footer {
-            background-color: #333; /* Fondo color gris oscuro */
-            color: #fff; /* Texto en color blanco */
-            text-align: center; /* Texto centrado */
-            padding: 20px; /* Relleno de 20px */
-            margin-top: 20px; /* Margen superior de 20px */
+
+        /* Contenedor para la barra lateral y contenido principal */
+        .container {
+            display: flex;
         }
-        /* Estilo para las secciones */
-        section {
-            font-family: Courier, monospace; /* Fuente Courier */
-            border: 1px black; /* Borde de 1px color negro */
-        }
-        /* Estilo específico para la sección "home" */
-        #home {
-            font-family: Arial, monospace; /* Fuente Arial */
-        }
-        /* Estilo específico para la sección "faq" */
-        #faq {
-            border-style: solid; /* Borde sólido */
-        }
-        /* Estilo para el elemento aside */
+
+        /* Estilos de la barra lateral */
         aside {
-            float: right; /* Flotar a la derecha */
-            border-style: solid; /* Borde sólido */
+            flex: 0 0 300px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        aside p {
+            color: #555;
+        }
+
+        /* Contenedor principal */
+        .main-content {
+            flex: 1;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado de la página -->
+
     <header>
-        <h1>Technology Project!</h1> <!-- Título principal en el encabezado -->
+        <h1>Technology Project!</h1>
+        <h6>Team 4</h6>
     </header>
 
-    <!-- Barra de navegación -->
     <nav>
-        <!-- Enlaces de navegación -->
-        <a href="Explorations in Artificial Intelligence and Machine Learning - Poster.png">Team Member 1</a>
-        <a href="Artificial Intelligence The Basics.png">The Basics in AI</a>
-        <a href="BOOK AI.png">Team Member 3</a>
-        <a href="#contact">Team Member 4</a>
-        <a href="#faq">Team Member 5</a>
+        <a href="Poster english AI BOOK.png">Patricio</a>
+        <a href="Pastel Green Illustrative Mental Health Poster (1).png">Mauricio</a>
+        <a href="Final Project.png">Ricardo</a>
+        <a href="Documento Póster científico Simple Marrón.png">Eugenio</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">DONT YOU DARE Click Me</a>
     </nav>
 
-    <!-- Contenido adicional flotando a la derecha -->
-    <aside>
-        <!-- Video de YouTube incrustado -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eXdVDhOGqoE?si=YIetR4zQpWx4q4yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </aside>
+    <div class="container">
+        <aside>
+            <h2>Team members</h2>
+            <p> For the project of techonology, we make a web page in which each one of us .</p>
+            <ul>
+                <li>this is an element of a List</li>
+                <li>this is another Element of the List</li>
+            </ul>
+        </aside>
+   
+        <div class="main-content">
+            <h2>Contenido Principal</h2>
+            <p>La Idea es que aqui pongan la informacion del Equipo y que con la barra de Navegacion sean paginas de los miembros del equipo</p>
+            <p>Me van a dar 1 entregable por equipo y ademas 1 individual Yo me encargo de ponerlo Online para que lo puedan explicar la idea es que la pagina web si sea accesible en la WORLD WIDE WEB</p>
+            <p>Hay 2 calificaciones para el proyecto 1 individula y la otra en equipo, si algun miembro no entrega la individual TODO el quipo pierde Puntos en la parte de EQUIPO asi que se pueden ayudar para entregar las paginas</p>
+            <h2>Otro Título</h2>
+            <p>SKIBIDI DOP DOP YES YES SKIBIDI W DIP DIP</p>
+            <p>Bienvenidos Developers Frontend Juniors</p>
+        </div>
+    </div>
 
-    <!-- Contenido principal de la página -->
-    <main>
-        <!-- Sección de inicio -->
-        <section id="home">
-            <h2>Bienvenido a Mi Página Web</h2>
-            <p>Esta es la sección de inicio.</p>
-        </section>
-
-        <!-- Sección de servicios -->
-        <section id="services">
-            <h2>Servicios</h2>
-            <p>Información sobre nuestros servicios.</p>
-        </section>
-
-        <!-- Sección acerca de -->
-        <section id="about">
-            <h2>Acerca de</h2>
-            <p>Información sobre nosotros.</p>
-        </section>
-
-        <!-- Sección de contacto -->
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Cómo ponerse en contacto con nosotros.</p>
-        </section>
-
-        <!-- Sección de preguntas frecuentes -->
-        <section id="faq">
-            <h2>FAQ</h2>
-            <p>Preguntas frecuentes.</p>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Mi Página Web</p> <!-- Derechos de autor -->
+        <p>&copy; 2024 Mi Página Web</p>
     </footer>
+
 </body>
 </html>
